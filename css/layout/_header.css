@@ -12,11 +12,11 @@ header .header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 28px;
+    padding: 12px 20px;
 }
 
 .header__container .header__logo img {
-    height: 40px;
+    height: 48px;
 }
 
 .header__container .header__nav .header__menu {
