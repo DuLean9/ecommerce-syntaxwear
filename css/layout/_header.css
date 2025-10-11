@@ -1,2 +1,55 @@
 /* Estilos do Header */
 
+header .header__container {
+    background-color: #ffffff;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: calc(100% - 40px);
+    border-radius: 15px;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 28px;
+}
+
+.header__container .header__logo img {
+    height: 40px;
+}
+
+.header__container .header__nav .header__menu {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.header__container .header__nav .header__menu a,
+.header__container .header__actions .header__info a {
+    font-size: 1.25rem;
+}
+
+.header__container .header__nav .header__menu a:hover,
+.header__container .header__actions .header__info a:hover {
+    color: #7c3aed;
+}
+
+.header__container .header__actions {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.header__container .header__actions .header__info,
+.header__container .header__actions .header__icons{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.header__container .header__actions .header__icons .header__icon img {
+    height: 20px;
+}
+
+.header__container .header__actions .header__icons .header__icon:hover img {
+    opacity: .7;
+}
