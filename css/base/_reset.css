@@ -63,3 +63,11 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+
+/*  Tirar a estilização do botão nos icones do header */
+.header__icon {
+  background: none;   /* remove fundo */
+  border: none;       /* remove borda */
+  padding: 0;         /* remove espaçamento interno padrão */
+  cursor: pointer;    /* muda o cursor para indicar clicável */
+}
