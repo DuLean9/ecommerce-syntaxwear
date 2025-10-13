@@ -3,7 +3,7 @@
 header .header__container {
     background-color: #ffffff;
     position: fixed;
-    top: 20px;
+    top: 30px;
     left: 50%;
     transform: translate(-50%);
     width: calc(100% - 40px);
@@ -12,7 +12,8 @@ header .header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 20px;
+    padding: 0.3rem 1.7rem;
+    max-width: 1350px;
 }
 
 .header__container .header__logo img {
@@ -27,6 +28,7 @@ header .header__container {
 .header__container .header__nav .header__menu a,
 .header__container .header__actions .header__info a {
     font-size: 1.25rem;
+    color: #333333;
 }
 
 .header__container .header__nav .header__menu a:hover,
