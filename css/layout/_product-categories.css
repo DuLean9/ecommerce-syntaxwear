@@ -19,8 +19,9 @@
     overflow: hidden;
     transition: .3s ease-in-out;
 }
-.category__card:hover {
+.category__card:hover .overlay {
     transform: scale(1.02);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .overlay {
@@ -30,10 +31,6 @@
     z-index: 1;
     transition: .3s ease-in;
 }
-.overlay:hover {
-    background-color: rgba(0, 0, 0, 0);
-}
-
 
 .categories__container .categories__content .category__card .category__name {
     position: absolute;
@@ -50,7 +47,7 @@
 }
 
 .casual {
-    background: url(../../images/assets/products/casual.jpg) no-repeat center;
+    background: url(../../images/assets/products/casual.jpg) center;
     background-size: cover;
 }
 
