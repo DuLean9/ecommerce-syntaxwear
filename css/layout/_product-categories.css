@@ -1,0 +1,71 @@
+.categories__container {
+    padding: 40px 0;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.categories__container .categories__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.categories__container .categories__content .category__card {
+    position: relative;
+    width: 317px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+}
+.category__card:hover {
+    transform: scale(1.02);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    transition: .3s ease-in;
+}
+.overlay:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+.categories__container .categories__content .category__card .category__name {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.category__link > .btn:hover {
+    opacity: .7;
+}
+
+.casual {
+    background: url(../../images/assets/products/casual.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.esporte {
+    background: url(../../images/assets/products/esporte.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.moderno {
+    background: url(../../images/assets/products/colorido.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.futurista {
+    background: url(../../images/assets/products/futurista.jpg) no-repeat center;
+    background-size: cover;
+}
+

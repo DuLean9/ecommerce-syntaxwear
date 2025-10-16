@@ -2,4 +2,38 @@ body{
     font-family: var(--fonte-principal);
     color: #333333;
     background-color: #ffffff;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px;
+    position: relative;
+}
+
+.btn {
+    font-size: 1.25rem;
+    width: 161px;
+    height: 48px;
+    border-radius: 25px;
+    color: #ffffff;
+    padding: 10px 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .3s, color .3s;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    line-height: 23px;
+}
+
+.btn-filled {
+    background-color: #ffffff;
+    color: #6329A2;
+}
+
+.btn:hover {
+    background-color: #6329A2;
+    color: #ffffff;
+    border-color: #6329A2;
 }
