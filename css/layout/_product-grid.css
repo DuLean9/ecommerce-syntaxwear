@@ -1,1 +1,112 @@
-/* Estilos do Grid de Produtos */
+
+.grid__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas: 
+        "top1 top1 top2 top2"
+        "top1 top1 midL midR"
+        "bottomL bottomL midL bottomR";
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.grid__container .grid__card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.grid__container .grid__card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease;
+    z-index: 0;
+    border-radius: inherit;
+}
+
+
+.top1 {
+    grid-area: top1;  
+}
+.top1::before { 
+    background-image: url(../../images/assets/products/main-grid.png); 
+}
+
+.top2 {
+    grid-area: top2; 
+}
+.top2::before { 
+    background-image: url(../../images/assets/products/tênis-roxo-verde-grid.jpg); 
+}
+
+.midL {
+    grid-area: midL; 
+}
+.midL::before {
+    background-image: url(../../images/assets/products/modelo-grid.jpg);
+}
+
+.midR {
+    grid-area: midR;
+}
+.midR::before {
+    background-image: url(../../images/assets/products/moderno-grid.jpg); 
+}
+
+.bottomL { 
+    grid-area: bottomL;
+}
+.bottomL::before { 
+    background-image: url(../../images/assets/products/ztênis-preto-azul-grid.jpg); 
+}
+
+.bottomR {
+    grid-area: bottomR;  
+}
+.bottomR::before {
+    background-image: url(../../images/assets/products/futurista-grid.jpg); 
+}
+
+
+.grid__container .grid__card:hover::before {
+    transform: scale(1.05);
+}
+
+
+.grid__container .grid__card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.grid__container .grid__card .top1__content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.grid__container .grid__card .top1__content .top1__title {
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #EDEDED;
+}
+
+.grid__container .grid__card .top1__content .top1__subtitle {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #EDEDED;
+}
+
+.grid__container .grid__card .top1__content .top1__group {
+    display: flex;
+    gap: 10px;
+}
