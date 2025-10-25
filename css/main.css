@@ -1,11 +1,11 @@
-@import "/css/base/_reset.css";
-@import "./base/_variables.css";
-@import "./base/_typography.css";
-@import "./layout/_header.css";
-@import "./layout/_hero.css";
-@import "./layout/_product-categories.css";
-@import "./layout/_product-grid.css";
-@import "./layout/_footer.css";
-@import "./utils/_helpers.css";
-@import "./utils/_accessibility.css";
+@import "./_reset.css";
+@import "./_variables.css";
+@import "./_typography.css";
+@import "./_header.css";
+@import "./_hero.css";
+@import "./_product-categories.css";
+@import "./_product-grid.css";
+@import "./_footer.css";
+@import "./_helpers.css";
+@import "./_accessibility.css";
 
