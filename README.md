@@ -31,14 +31,6 @@ O projeto está organizado da seguinte forma:
 
 ```
 ecommerce-syntaxwear/
-├── components/
-│   ├── collection-highlight.html
-│   ├── footer.html
-│   ├── header.html
-│   ├── hero.html
-│   ├── newsletter.html
-│   ├── product-categories.html
-│   └── product-grid.html
 ├── css/
 │   ├── base/
 │   │   ├── reset.css
