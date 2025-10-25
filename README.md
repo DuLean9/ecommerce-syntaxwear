@@ -8,7 +8,7 @@ Este projeto é uma implementação de front-end para uma página de loja de cal
 
 ## Preview 📷
 
-[<img src="./images/assets/banners/desktop.gif">]
+![Gif](images/assets/banners/desktop.gif)
 
 ## Funcionalidades ⚙️
 
