@@ -54,3 +54,86 @@ header .header__container {
 .header__container .header__actions .header__icons .header__icon:hover img {
     opacity: .7;
 }
+
+.menu__toggle {
+    display: none;
+}
+
+.menu__icon {
+    display: none;
+    height: 30px;
+    width: 30px;
+}
+
+.menu__icon img {
+    height: 100%;
+    width: 100%;
+    transition: opacity .3s ease;
+}
+
+.menu__icon:hover img {
+    opacity: .7;
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+/* Responsivo */
+
+@media (max-width: 1280px) {
+    .header__container {
+        width: calc(100% - 40px);
+    }
+
+    .menu__icon {
+        display: block;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .nav__container {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 200px;
+        flex-direction: column;
+        padding: 80px 20px 20px;
+        background-color: #ffffff;
+        gap: 2rem;
+        transition: right .3s ease;
+        align-items: flex-start;
+    }
+
+    .header__container .header__nav .header__menu, .header__container .header__actions .header__info, .header__container .header__actions .header__icons, .header__container .header__actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    .header__container .header__nav .header__menu li, .header__container .header__actions .header__info li {
+        width: 100%;
+    }
+
+    .header__container .header__nav .header__menu a,
+    .header__container .header__actions .header__info a {
+        border-bottom: 1px solid #eeeeee;
+        padding: .3rem 0rem;
+        font-size: 1rem;
+        display: block;
+    }
+
+    .header__nav, .header__actions, .header__icons {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .menu__toggle:checked ~ .nav__container {
+        right: 0;
+    }
+
+}
