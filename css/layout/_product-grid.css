@@ -110,3 +110,23 @@
     display: flex;
     gap: 10px;
 }
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+    .grid__container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(7, 190px);
+        grid-template-areas:
+                    "top1 top1"
+                    "top1 top1" 
+                    "top1 top1"
+                    "bottomL bottomL"
+                    "midL midR"
+                    "midL bottomR"
+                    "top2 top2";
+        gap: .625rem;
+        max-width: 100%;
+        padding: 20px 0;
+    }
+}

@@ -85,7 +85,7 @@ header .header__container {
 /* Responsivo */
 
 @media (max-width: 1280px) {
-    .header__container {
+    header .header__container {
         width: calc(100% - 40px);
     }
 
@@ -106,9 +106,10 @@ header .header__container {
         gap: 2rem;
         transition: right .3s ease;
         align-items: flex-start;
+        border-radius: 15px;
     }
 
-    .header__container .header__nav .header__menu, .header__container .header__actions .header__info, .header__container .header__actions .header__icons, .header__container .header__actions {
+    .header__container .header__nav .header__menu, .header__container .header__actions .header__info, .header__container .header__actions {
         flex-direction: column;
         width: 100%;
         gap: 1.5rem;
@@ -126,7 +127,7 @@ header .header__container {
         display: block;
     }
 
-    .header__nav, .header__actions, .header__icons {
+    .header__nav, .header__actions {
         width: 100%;
         text-align: center;
         align-items: center;

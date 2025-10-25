@@ -5,7 +5,6 @@
     margin: 0 auto;
 }
 
-/* ===== Container principal ===== */
 .footer__container {
     display: flex;
     justify-content: space-between;
@@ -14,13 +13,13 @@
     gap: 9.6875rem;
 }
 
-/* ===== Newsletter e redes ===== */
 .footer__container .footer__subscribe {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 1.875rem;
+    order: 1;
 }
 
 .footer__container .footer__subscribe .footer__form {
@@ -62,12 +61,12 @@
     transform: scale(1.03);
 }
 
-/* ===== Colunas de links ===== */
 .footer__container .footer__links {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1.1875rem;
+    order: 2;
 }
 
 .footer__container .footer__links > div {
@@ -99,7 +98,6 @@
 }
 
 
-/* ===== Linha e copyright ===== */
 .footer__bottom {
     text-align: center;
 }
@@ -114,4 +112,20 @@
     font-size: 14px;
     color: #ccc;
     letter-spacing: 0.5px;
+}
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+    .footer__container {
+        padding: 40px 0;
+        gap: 5rem;
+    }
+
+    .footer__container .footer__subscribe {
+        width: 100%;
+        order: 3;
+    }
+
+
 }

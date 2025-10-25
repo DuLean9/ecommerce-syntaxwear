@@ -43,3 +43,32 @@
     gap: 16px;
 }
 
+/* Responsivo */
+
+@media (max-width: 768px) {
+    .hero__container {
+        height: 660px;
+        background-image: url(../../images/assets/banners/hero_mobile.png);
+    }
+
+    .hero__container .hero__overlay {
+        padding: 0;
+    }
+
+    .hero__container .hero__overlay .hero__content .hero__title {
+        font-size: 1.5rem;
+    }
+
+    .hero__container .hero__overlay .hero__content .hero__subtitle {
+        font-size: 1.25rem;
+    }
+
+    .hero__container .hero__overlay .hero__content{
+        max-width: 330px;
+        margin: 0 auto;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
+}
